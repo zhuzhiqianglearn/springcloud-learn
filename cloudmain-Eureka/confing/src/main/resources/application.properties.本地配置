@@ -1,0 +1,5 @@
+spring.application.name==config-server
+server.port=7001
+
+spring.profiles.active=native
+spring.cloud.config.server.native.search-locations=C:/ideasvn/cloudmain-Eureka/confing/src/main

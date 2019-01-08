@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/zhuce/pom.xml" />
+        <option value="$PROJECT_DIR$/core-2/pom.xml" />
+        <option value="$PROJECT_DIR$/xiaofeizhe/pom.xml" />
+        <option value="$PROJECT_DIR$/yibiaopan/pom.xml" />
+        <option value="$PROJECT_DIR$/turbin/pom.xml" />
+        <option value="$PROJECT_DIR$/feign/pom.xml" />
+        <option value="$PROJECT_DIR$/hellojicheng/pom.xml" />
+        <option value="$PROJECT_DIR$/hellojichengfuwu/pom.xml" />
+        <option value="$PROJECT_DIR$/jichengfeign3/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/confing/pom.xml" />
+        <option value="$PROJECT_DIR$/config-hello/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

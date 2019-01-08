@@ -1,0 +1,156 @@
+一。注解使用：
+   （一）注解同步执行
+     1.注解开启断路器功能 @EnableCircuitBreaker
+     2.方法事例
+      @HystrixCommand(fallbackMethod = "erro")
+         public String succese(){
+             Person person=new Person();
+             person.setAddress("beijing");
+             person.setAge(18);
+             person.setName("zzq");
+             return restTemplate.postForObject("http://hello-service/hello-post",person,String.class);
+         }
+      注意： fallbackMethod：请求失败的情况下调用的方法
+        public String erro(){
+               return "404-----------405";
+           }
+     （二）异步执行
+      1.在项目的入口类中配置一个HystrixCommandAspect的Bean，如下：
+
+        @Bean
+        public HystrixCommandAspect hystrixCommandAspect() {
+            return new HystrixCommandAspect();
+        }
+      2. 方法事例：@HystrixCommand(fallbackMethod = "erro")
+            public Future<String> succeseYibu(){
+                return  new AsyncResult<String>() {
+                    @Override
+                    public String invoke() {
+                        Person person=new Person();
+                        person.setAddress("beijing");
+                        person.setAge(18);
+                        person.setName("zzq");
+                        return  restTemplate.postForObject("http://hello-service/yanshi",person,String.class);
+                    }
+                };
+            }
+      3.controller调用方法
+
+          @RequestMapping("/xiaofeizhe-duanlu-HystrixCommandYibu")
+          public String HystrixCommandYibu() throws ExecutionException, InterruptedException {
+              Future<String> stringFuture = helloService.succeseYibu();
+              System.out.println("HystrixCommandYibu---------异步调用方法---------");
+              String s = stringFuture.get();
+              System.out.println(s);
+              return s;
+          }
+二。继承HystrixCommand类使用
+       1.class类事例
+        public class PersonCommand extends HystrixCommand<String> {
+            private RestTemplate restTemplate;
+            private Long id;
+            public PersonCommand(Setter setter, RestTemplate restTemplate,Long id) {
+                super(setter);
+                this.restTemplate=restTemplate;
+                this.id=id;
+            }
+
+            @Override
+            protected String run() throws Exception {
+                return restTemplate.getForObject("http://hello-service/yanshi",String.class);
+            }
+
+            @Override
+            protected String getFallback() {
+                return "HystrixCommand<String> 返回失败";
+            }
+        }
+         备注：run（）方法设计执行的方法 ，getFallback（）调用run失败执行的方法
+       2.controller使用展示
+         （1）同步执行
+         	@RequestMapping("/xiaofeizhe-tongbu")
+         	public String agin(){
+                 PersonCommand myfirstHy = new PersonCommand(HystrixCommand.Setter.withGroupKey(
+                         HystrixCommandGroupKey.Factory.asKey("myfirstHy")).andCommandPropertiesDefaults(
+                         HystrixCommandProperties.Setter().withExecutionTimeoutInMilliseconds(2000)), restTemplate(), 1l);
+                 return myfirstHy.execute();
+         	}
+         （2）异步执行
+         execute（）方法变成queue（）方法
+
+三。Observable模式
+
+  实例：
+  //observableExecutionMode = ObservableExecutionMode.EAGER 同步执行
+  @HystrixCommand(fallbackMethod = "erroYibu",observableExecutionMode = ObservableExecutionMode.EAGER)
+  public Observable<String> HystrixCommandTongbu(){
+          return Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+              @Override
+              public void call(Subscriber<? super String> subscriber) {
+                  String s= restTemplate.getForObject("http://hello-service/yanshi",String.class);
+                  subscriber.onNext(s);
+                  subscriber.onCompleted();
+              }
+          });
+  }
+    //observableExecutionMode = ObservableExecutionMode.LAZY 异步执行
+      @HystrixCommand(fallbackMethod = "erroYibu",observableExecutionMode = ObservableExecutionMode.LAZY)
+      public Observable<String> HystrixCommandYibu(){
+          return Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+              @Override
+              public void call(Subscriber<? super String> subscriber) {
+                  String s= restTemplate.getForObject("http://hello-service/yanshi",String.class);
+                  subscriber.onNext(s);
+                  subscriber.onCompleted();
+              }
+          });
+      }
+
+      public Observable<String> erroYibu(){
+          return Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+              @Override
+              public void call(Subscriber<? super String> subscriber) {
+                  String s= "HystrixCommand----Observable观察模式错误---------";
+                  subscriber.onNext(s);
+                  subscriber.onCompleted();
+              }
+          });
+      }
+
+      接受结果（参照下面书写）：
+
+      @RequestMapping("/xiaofeizhe-agin2-observable-zhujie-yibu")
+          public String zhujieObservableYibu(){
+              Observable<String> stringObservable = helloService.HystrixCommandYibu();
+              System.out.println("--------------");
+              final String[] reslut = {""};
+              stringObservable.subscribe(new Observer<String>() {
+                  @Override
+                  public void onCompleted() {
+                      System.out.println("执行结束");
+                  }
+
+                  @Override
+                  public void onError(Throwable throwable) {
+
+                  }
+
+                  @Override
+                  public void onNext(String s) {
+                      reslut[0] =s;
+                  }
+              });
+
+              return reslut[0];
+          }
+
+  三。命令名称，分组及线程池划分
+  只需在注解添加commandKey，groupKey，threadPoolKey属性
+ @HystrixCommand(fallbackMethod = "erro",commandKey = "mingming",groupKey = "mingmingGroup",threadPoolKey = "getMingming")
+    public String mingming(){
+        Person person=new Person();
+        person.setAddress("beijing");
+        person.setAge(18);
+        person.setName("zzq");
+        return restTemplate.postForObject("http://hello-service/hello-post",person,String.class);
+    }

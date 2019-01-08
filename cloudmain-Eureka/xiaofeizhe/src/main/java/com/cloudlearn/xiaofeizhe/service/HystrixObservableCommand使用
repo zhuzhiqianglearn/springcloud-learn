@@ -1,0 +1,76 @@
+// 继承HystrixObservableCommand这个类，重写construct（）和错误调用 resumeWithFallback（）方法
+public class PersonObserval extends HystrixObservableCommand<String>{
+
+    private RestTemplate restTemplate;
+    private Long id;
+
+    public PersonObserval(Setter setter, RestTemplate restTemplate, Long id) {
+        super(setter);
+        this.restTemplate=restTemplate;
+        this.id=id;
+    }
+
+
+    @Override
+    protected Observable<String> construct() {
+        return Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+            @Override
+            public void call(Subscriber<? super String> subscriber) {
+                try{
+                    if(!subscriber.isUnsubscribed()){
+                       String s= restTemplate.getForObject("http://hello-service/yanshi",String.class);
+                       subscriber.onNext(s);
+                       subscriber.onCompleted();
+                    }
+
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    @Override
+    protected Observable<String> resumeWithFallback() {
+        return Observable.unsafeCreate(new Observable.OnSubscribe<String>() {
+            @Override
+            public void call(Subscriber<? super String> subscriber) {
+                String s="cuowu--------------";
+                subscriber.onNext(s);
+                subscriber.onCompleted();
+            }
+        });
+    }
+}
+  使用：
+  @RequestMapping("/xiaofeizhe-agin2-observable")
+      public String observable(){
+          PersonObserval myfirstHy = new PersonObserval(HystrixObservableCommand.Setter.withGroupKey(
+                  HystrixCommandGroupKey.Factory.asKey("myfirstHy")).andCommandPropertiesDefaults(
+                  HystrixCommandProperties.Setter().withExecutionTimeoutInMilliseconds(2000)), restTemplate(), 1l);
+   *********       Observable<String> observe = myfirstHy.observe();
+          System.out.println("--------------");
+          final String[] reslut = {""};
+   ******       observe.subscribe(new Observer<String>() {
+              @Override
+              public void onCompleted() {
+                  System.out.println("执行结束");
+              }
+
+              @Override
+              public void onError(Throwable throwable) {
+
+              }
+
+              @Override
+              public void onNext(String s) {
+                     reslut[0] =s;
+              }
+          });
+
+          return reslut[0];
+      }
+备注：
+ observe.subscribe，调用返回的结果
+ Observable<String> observe = myfirstHy.observe(); 这个是同步执行方法，调用就阻塞执行
+ Observable<String> observe = myfirstHy.toObservable();这个是异步执行方法，只有调用结果的时候才阻塞

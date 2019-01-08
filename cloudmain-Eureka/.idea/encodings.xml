@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/confing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/core-2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hellojicheng" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hellojichengfuwu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jichengfeign3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/turbin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiaofeizhe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yibiaopan" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhuce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+  </component>
+</project>

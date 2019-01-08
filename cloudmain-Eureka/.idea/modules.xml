@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloudmain-Eureka.iml" filepath="$PROJECT_DIR$/cloudmain-Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-hello/config-hello.iml" filepath="$PROJECT_DIR$/config-hello/config-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/confing/confing.iml" filepath="$PROJECT_DIR$/confing/confing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-2/core-2.iml" filepath="$PROJECT_DIR$/core-2/core-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign/feign.iml" filepath="$PROJECT_DIR$/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellojicheng/hellojicheng.iml" filepath="$PROJECT_DIR$/hellojicheng/hellojicheng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellojichengfuwu/hellojichengfuwu.iml" filepath="$PROJECT_DIR$/hellojichengfuwu/hellojichengfuwu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jichengfeign3/jichengfeign3.iml" filepath="$PROJECT_DIR$/jichengfeign3/jichengfeign3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbin/turbin.iml" filepath="$PROJECT_DIR$/turbin/turbin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xiaofeizhe/xiaofeizhe.iml" filepath="$PROJECT_DIR$/xiaofeizhe/xiaofeizhe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yibiaopan/yibiaopan.iml" filepath="$PROJECT_DIR$/yibiaopan/yibiaopan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhuce/zhuce.iml" filepath="$PROJECT_DIR$/zhuce/zhuce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>
