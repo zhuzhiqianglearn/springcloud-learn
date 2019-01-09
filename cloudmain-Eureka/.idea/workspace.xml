@@ -50,43 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ReciverHello.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1018">
-              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/springcloudlearn/rabbitmq/sender/Sender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReciverHello2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Channel.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Channel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="266">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
               <folding>
                 <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
                 <marker date="1546855357662" expanded="false" signature="143:763" ph="..." />
@@ -95,188 +63,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublisherCallbackChannel.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.2.RELEASE/spring-rabbit-2.1.2.RELEASE.jar!/org/springframework/amqp/rabbit/connection/PublisherCallbackChannel.class">
+      <file leaf-file-name="AMQP.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/AMQP.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="-34595">
+              <caret line="1932" column="17" lean-forward="true" selection-start-line="1932" selection-start-column="17" selection-end-line="1932" selection-end-column="17" />
               <folding>
-                <marker date="1546855357690" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1546855357690" expanded="false" signature="166:336" ph="..." />
-                <marker date="1546855357690" expanded="true" signature="1045:1384" ph="{...}" />
+                <element signature="class#Unbind#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+                <element signature="class#BindOk#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+                <element signature="class#Bind#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+                <element signature="class#DeleteOk#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+                <element signature="class#Delete#0;class#Exchange#0;class#AMQP#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChannelN.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/ChannelN.class">
+      <file leaf-file-name="AutorecoveringChannel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-              <folding>
-                <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1546855357662" expanded="false" signature="148:3333" ph="..." />
-                <marker date="1546855357662" expanded="true" signature="4159:4248" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="4383:4985" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="5029:5079" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="5139:5150" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="5185:5191" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="5268:5582" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="5376:5496" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="5648:5659" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="5704:5710" ph=" }" />
-                <marker date="1546855357662" expanded="false" signature="5750:5761" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="5790:5796" ph=" }" />
-                <marker date="1546855357662" expanded="false" signature="5858:5869" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="5905:5911" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="6030:6527" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="6096:6438" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="6187:6261" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="6353:6428" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="6595:6606" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="6652:6658" ph=" }" />
-                <marker date="1546855357662" expanded="false" signature="6699:6710" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="6740:6746" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="6813:7010" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="7107:8248" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="8330:8461" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="8573:8928" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="8970:8981" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="9009:9015" ph=" }" />
-                <marker date="1546855357662" expanded="false" signature="9070:9081" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="9113:9119" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="9194:9314" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="9433:9510" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="9559:9807" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="9920:10045" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="10084:10095" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="10128:10134" ph=" }" />
-                <marker date="1546855357662" expanded="false" signature="10169:10180" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="10225:10231" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="10301:13082" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="13152:14216" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="14331:14969" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="15035:15568" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="15636:16175" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="16244:16756" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="16819:16857" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="16954:17036" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="17081:17119" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="17198:17415" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="17579:18966" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="17928:18113" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="17995:18103" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19065:19147" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19228:19284" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19349:19404" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19526:19602" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19743:19830" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="19990:20652" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="20808:20907" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="21076:21178" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="21353:21604" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="21792:21903" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="22077:22320" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="22507:22619" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="22724:22819" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="22937:23016" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="23104:23197" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="23298:23368" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="23450:23621" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="23712:23881" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="23974:24137" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="24210:24270" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="24407:24618" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="24759:24966" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="25072:25157" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="25298:25513" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="25623:25710" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="25853:26062" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="26257:26561" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="26649:26724" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="26881:27154" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="27269:27526" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="27590:27735" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="27800:27946" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="28087:28343" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="28447:28658" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="28764:28825" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="28994:29273" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="29411:29489" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="29623:29859" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="30032:30315" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="30380:30559" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="30701:30781" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="30865:31839" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="31921:32052" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="32152:32284" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="32368:32494" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="32579:32644" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="32774:32896" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="33050:33182" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="33367:33521" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="33623:33694" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="33865:34010" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="34157:34292" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="34494:34661" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="34794:34890" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="35068:35228" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="35430:35600" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="35833:36025" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="36147:36252" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="36419:36588" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="36779:36958" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="37180:37381" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="37615:37790" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="38048:38233" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="38522:38729" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="38930:40187" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="39210:39710" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="39278:39700" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="40321:41106" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="40353:41099" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="40415:40430" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="40491:40506" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="40584:40651" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="40747:40762" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="40824:40839" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="40979:41089" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="41266:42078" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="41298:42071" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="41360:41375" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="41436:41451" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="41529:41544" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="41640:41734" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="41796:41811" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="41951:42061" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="42281:43145" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="42313:43138" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="42375:42390" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="42451:42466" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="42544:42611" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="42707:42801" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="42863:42878" ph="{}" />
-                <marker date="1546855357662" expanded="true" signature="43018:43128" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="43220:44688" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="43569:44112" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="43643:44098" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="44745:44792" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="44864:44952" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="45004:45083" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="45135:45214" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="45270:45353" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="45451:45711" ph="{...}" />
-                <marker date="1546855357662" expanded="false" signature="45750:45761" ph=" { " />
-                <marker date="1546855357662" expanded="false" signature="45790:45796" ph=" }" />
-                <marker date="1546855357662" expanded="true" signature="45857:45895" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="45957:46008" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="46102:46158" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="46206:46389" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="46428:46579" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="46656:47104" ph="{...}" />
-                <marker date="1546855357662" expanded="true" signature="47168:47324" ph="{...}" />
-              </folding>
+            <state relative-caret-position="-2449">
+              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,8 +92,8 @@
       <file leaf-file-name="RecoveryAwareChannelN.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/recovery/RecoveryAwareChannelN.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="-131">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
                 <marker date="1546855357662" expanded="false" signature="157:661" ph="..." />
@@ -309,24 +117,60 @@
       <file leaf-file-name="SenderHello.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/SenderHello.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+            <state relative-caret-position="576">
+              <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="消费者流程.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/消费者流程.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="AMQImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/AMQImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="4057" column="28" lean-forward="false" selection-start-line="4057" selection-start-column="28" selection-end-line="4057" selection-end-column="28" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="生产者流程.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/生产者流程.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="PublisherCallbackChannel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.2.RELEASE/spring-rabbit-2.1.2.RELEASE.jar!/org/springframework/amqp/rabbit/connection/PublisherCallbackChannel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecoverableChannel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/RecoverableChannel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AMQConnection.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/AMQConnection.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShutdownNotifierComponent.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/ShutdownNotifierComponent.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="78" column="5" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="78" selection-end-column="5" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -357,6 +201,9 @@
       <find>security</find>
       <find>act</find>
       <find>refresh</find>
+      <find>isopen</find>
+      <find>is</find>
+      <find>Exchang.</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -418,8 +265,8 @@
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/springcloudlearn/rabbitmq/RabbitmqApplication.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/springcloudlearn/rabbitmq/receiver/ReceiverTwo.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello2.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/SenderHello.java" />
       </list>
     </option>
@@ -642,7 +489,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="senderro&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.M1/spring-cloud-netflix-zuul-2.1.0.M1.jar!/org/springframework/cloud/netflix/zuul/filters/post/SendErrorFilter.class&#10;HystrixCircuitBreaker&#9;PSI&#9;JAVA://com.netflix.hystrix.HystrixCircuitBreaker&#10;getExecutionObservable&#9;PSI&#9;JAVA://com.netflix.hystrix.AbstractCommand#getUserExecutionObservable&#10;HystrixCommand&#9;PSI&#9;JAVA://com.netflix.hystrix.HystrixCommand&#10;loadbalancerclient&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient&#10;Loadbalancercl&#9;PSI&#9;JAVA://org.springframework.cloud.client.loadbalancer.LoadBalancerClient&#10;EurekaClientConfigBean&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.0.1.RELEASE/spring-cloud-netflix-eureka-client-2.0.1.RELEASE.jar!/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.class&#10;EurekaClientCon&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/EurekaClientConfig.class&#10;initSchedule&#9;PSI&#9;JAVA://com.netflix.discovery.DiscoveryClient#initScheduledTasks&#10;EndpointU&#9;PSI&#9;JAVA://com.netflix.discovery.endpoint.EndpointUtils" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/AMQConnection.class&#10;DeclareOk&#9;PSI&#9;JAVA://com.rabbitmq.client.impl.AMQImpl.Exchange.DeclareOk&#10;Exchange&#9;PSI&#9;JAVA://com.rabbitmq.client.AMQP.Exchange&#10;senderro&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.0.M1/spring-cloud-netflix-zuul-2.1.0.M1.jar!/org/springframework/cloud/netflix/zuul/filters/post/SendErrorFilter.class&#10;HystrixCircuitBreaker&#9;PSI&#9;JAVA://com.netflix.hystrix.HystrixCircuitBreaker&#10;getExecutionObservable&#9;PSI&#9;JAVA://com.netflix.hystrix.AbstractCommand#getUserExecutionObservable&#10;HystrixCommand&#9;PSI&#9;JAVA://com.netflix.hystrix.HystrixCommand&#10;loadbalancerclient&#9;PSI&#9;JAVA://org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient&#10;Loadbalancercl&#9;PSI&#9;JAVA://org.springframework.cloud.client.loadbalancer.LoadBalancerClient&#10;EurekaClientConfigBean&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.0.1.RELEASE/spring-cloud-netflix-eureka-client-2.0.1.RELEASE.jar!/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.class&#10;EurekaClientCon&#9;FILE&#9;jar://C:/Users/zhuzh/.m2/repository/com/netflix/eureka/eureka-client/1.9.3/eureka-client-1.9.3.jar!/com/netflix/discovery/EurekaClientConfig.class&#10;initSchedule&#9;PSI&#9;JAVA://com.netflix.discovery.DiscoveryClient#initScheduledTasks&#10;EndpointU&#9;PSI&#9;JAVA://com.netflix.discovery.endpoint.EndpointUtils" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -682,7 +529,7 @@
     </option>
     <option name="contentProportion" value="0.1590164" />
   </component>
-  <component name="RunManager" selected="Application.SenderHello">
+  <component name="RunManager" selected="Application.ReciverHello">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -950,9 +797,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ReciverHello2" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ReciverHello" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SenderHello" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ReciverHello" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SenderHello" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ReciverHello2" />
         <item index="3" class="java.lang.String" itemvalue="Spring Boot.CoreApplication" />
         <item index="4" class="java.lang.String" itemvalue="Spring Boot.RabbitmqApplication" />
       </list>
@@ -997,7 +844,7 @@
       <workItem from="1546566741590" duration="8279000" />
       <workItem from="1546827409133" duration="15186000" />
       <workItem from="1546930959877" duration="7221000" />
-      <workItem from="1546941858067" duration="923000" />
+      <workItem from="1546941858067" duration="5722000" />
     </task>
     <servers />
   </component>
@@ -1028,7 +875,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217390000" />
+    <option name="totallyTimeSpent" value="222189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1041,18 +888,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6845039" sideWeight="0.50214595" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.69957083" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7580825" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1062,18 +912,16 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8372352" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1198,68 +1046,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/cloudlearn/zuul/filter/AccessFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="48" column="11" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="48" selection-end-column="11" />
-          <folding>
-            <element signature="e#418#419#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#547#548#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#1393#1394#0" expanded="false" />
-            <element signature="e#1462#1463#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/cloudlearn/zuul/filter/ErroFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#414#415#0" expanded="false" />
-            <element signature="e#444#445#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <element signature="e#515#516#0" expanded="false" />
-            <element signature="e#566#567#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confing/src/main/didispace.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confing/src/main/didispace_test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confing/src/main/didispace_prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-hello/src/main/java/com/springcloudlearn/confighello/controller/GitController.java" />
     <entry file="file://$PROJECT_DIR$/config-hello/src/main/resources/application.properties.back">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1342,6 +1128,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,6 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,6 +1201,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1420,6 +1209,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="false" />
+            <element signature="e#863#864#0" expanded="false" />
+            <element signature="e#914#915#0" expanded="false" />
+            <element signature="e#940#941#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1492,25 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/RecoverableChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.2.RELEASE/spring-rabbit-2.1.2.RELEASE.jar!/org/springframework/amqp/rabbit/connection/PublisherCallbackChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <marker date="1546855357690" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1546855357690" expanded="false" signature="166:336" ph="..." />
-            <marker date="1546855357690" expanded="true" signature="1045:1384" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1684,45 +1463,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/recovery/RecoveryAwareChannelN.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1546855357662" expanded="false" signature="157:661" ph="..." />
-            <marker date="1546855357662" expanded="true" signature="926:1015" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="1163:1324" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="1394:1616" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="1672:1859" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="1941:2273" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="2373:2706" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="2790:3026" ph="{...}" />
-            <marker date="1546855357662" expanded="true" signature="3084:3236" ph="{...}" />
-            <marker date="1546855357662" expanded="false" signature="3277:3288" ph=" { " />
-            <marker date="1546855357662" expanded="false" signature="3319:3325" ph=" }" />
-            <marker date="1546855357662" expanded="false" signature="3371:3382" ph=" { " />
-            <marker date="1546855357662" expanded="false" signature="3418:3424" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/springcloudlearn/rabbitmq/sender/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Channel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
-          <folding>
-            <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1546855357662" expanded="false" signature="143:763" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1746,18 +1491,130 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1018">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="614">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/ShutdownNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Connection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/ShutdownNotifierComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="78" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.2.RELEASE/spring-rabbit-2.1.2.RELEASE.jar!/org/springframework/amqp/rabbit/connection/PublisherCallbackChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/RecoverableChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2449">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/recovery/RecoveryAwareChannelN.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1546855357662" expanded="false" signature="157:661" ph="..." />
+            <marker date="1546855357662" expanded="true" signature="926:1015" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="1163:1324" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="1394:1616" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="1672:1859" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="1941:2273" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="2373:2706" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="2790:3026" ph="{...}" />
+            <marker date="1546855357662" expanded="true" signature="3084:3236" ph="{...}" />
+            <marker date="1546855357662" expanded="false" signature="3277:3288" ph=" { " />
+            <marker date="1546855357662" expanded="false" signature="3319:3325" ph=" }" />
+            <marker date="1546855357662" expanded="false" signature="3371:3382" ph=" { " />
+            <marker date="1546855357662" expanded="false" signature="3418:3424" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <marker date="1546855357662" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1546855357662" expanded="false" signature="143:763" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/AMQP.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34595">
+          <caret line="1932" column="17" lean-forward="true" selection-start-line="1932" selection-start-column="17" selection-end-line="1932" selection-end-column="17" />
+          <folding>
+            <element signature="class#Unbind#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+            <element signature="class#BindOk#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+            <element signature="class#Bind#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+            <element signature="class#DeleteOk#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+            <element signature="class#Delete#0;class#Exchange#0;class#AMQP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/AMQImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="4057" column="28" lean-forward="false" selection-start-line="4057" selection-start-column="28" selection-end-line="4057" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/AMQConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/SenderHello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        <state relative-caret-position="576">
+          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="18" />
           <folding />
         </state>
       </provider>
