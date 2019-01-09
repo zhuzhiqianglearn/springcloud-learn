@@ -15,8 +15,8 @@ public class ReciverHello {
     public static void main(String[] args) throws Exception{
         Address[] addresses=new Address[]{new Address(IP_ADDRESS,PORT)};
         ConnectionFactory factory=new ConnectionFactory();
-        factory.setUsername("root");
-        factory.setPassword("root");
+        factory.setUsername("guest");
+        factory.setPassword("guest");
         //与生产者创建连接不同
         Connection connection=factory.newConnection(addresses);//创建连接
         Channel channel = connection.createChannel();//创建信道
@@ -37,11 +37,10 @@ public class ReciverHello {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-                if(!new String(body).contains("1")){
+                if(!new String(body).contains("6")){
                     channel.basicAck(envelope.getDeliveryTag(),false);
-
                 }else{
-                    channel.basicReject(envelope.getDeliveryTag(),true);
+                    channel.basicReject(envelope.getDeliveryTag(),false);
                 }
             }
 
@@ -67,8 +66,8 @@ public class ReciverHello {
         // ReciverHello2 睡眠4秒，消费的消息明细那较小
         String s = channel.basicConsume(QUEUE_NAME, false,consumer);
         //等待回调函数执行完毕之后，关闭字段
-        TimeUnit.SECONDS.sleep(15);
-        channel.basicCancel(s);
+        TimeUnit.SECONDS.sleep(60);
+//        channel.basicCancel(s);
         System.out.println(s);
         channel.close();
         connection.close();
