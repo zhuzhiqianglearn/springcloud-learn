@@ -77,9 +77,27 @@ public class SenderHello {
         exchange ：交换器名称
         type:交换器类型（常用：fanout，direct，topic,headers）
         durable:设置是否持久化，true，持久化到硬盘，重启不会丢失信息
-        autoDelete：设置是否自动删除
+        autoDelete：设置是否自动删除，至少有一个队列连接，之后的队列都自动删除
         internal:设置是否是内置的，ture 表示内置交换器，客户端无法直接发送消息到这个交换器中，只能通过交换器路由到交换器这种方式
         argument(Map):其他一些结构化参数
+
+        queueDeclare参数说明：
+        queue:队列名称
+        durable：设置是否持久化
+        exclusive：设置是否排他，如果为true，其他的连接都不可以创建命名相同的队列，即使设置了持久化，那么断开连接也会自动删除
+        autoDelete:设置是否自动删除，至少有一个消费者连接，之后的连接自动删除
+        argument(Map):其他一些结构化参数
+
+        exchange和queue都有删除的功能 :
+        channel.exchangeDelete( name,isUnused) 删除名称，如果没有在使用的前提下删除
+        queue 同上
+        queue 有个独有的方法  queuePurge 清空队列内的内容
+
+        queueBing参数说明：
+        queue:队列名称
+        exchange:交换器名称
+        routingKey:用来绑定队列和交换器的路邮键
+        argment：定义绑定的一些参数
          * */
     }
 

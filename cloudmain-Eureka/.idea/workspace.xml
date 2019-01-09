@@ -50,6 +50,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="ReciverHello.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Channel.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Channel.class">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,8 +127,8 @@
       <file leaf-file-name="SenderHello.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/SenderHello.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="18" />
+            <state relative-caret-position="738">
+              <caret line="99" column="25" lean-forward="false" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -159,16 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShutdownNotifierComponent.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/impl/ShutdownNotifierComponent.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="78" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -844,7 +844,7 @@
       <workItem from="1546566741590" duration="8279000" />
       <workItem from="1546827409133" duration="15186000" />
       <workItem from="1546930959877" duration="7221000" />
-      <workItem from="1546941858067" duration="5722000" />
+      <workItem from="1546941858067" duration="8550000" />
     </task>
     <servers />
   </component>
@@ -875,7 +875,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222189000" />
+    <option name="totallyTimeSpent" value="225017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,7 +888,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6845039" sideWeight="0.50214595" order="8" side_tool="true" content_ui="tabs" />
@@ -912,7 +911,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8372352" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1489,16 +1488,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/ShutdownNotifier.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -1611,10 +1600,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/ReciverHello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/RabbitmqHello/SenderHello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="18" />
+        <state relative-caret-position="738">
+          <caret line="99" column="25" lean-forward="false" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding />
         </state>
       </provider>
