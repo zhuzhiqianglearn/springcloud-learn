@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ReciverHello2 {
     private static final String EXCHANG_NAME = "exchange_demo";
     private static final String ROUTING_KEY = "routing_demo";
-    private static final String QUEUE_NAME = "queue_demo2";
+    private static final String QUEUE_NAME = "queue_demo";
     private static final String IP_ADDRESS = "localhost";
     private static final int PORT = 5672;
 
@@ -34,13 +34,19 @@ public class ReciverHello2 {
                 }catch (Exception e){
                     e.printStackTrace();
                 }
-                channel.basicAck(envelope.getDeliveryTag(),false);
+                if(!new String(body).contains("1")){
+                    channel.basicAck(envelope.getDeliveryTag(),false);
+                }else{
+                    System.out.println(envelope.getDeliveryTag());
+                    //拒绝消息，如果false，那么直接在内存中直接删除，如果设置成true，那么他会重新编号，进行下一次发送
+                    channel.basicReject(envelope.getDeliveryTag(),false);
+                }
             }
         };
         //basic.Consume 消费者订阅并接受消息,如果确认消息，那么消息就不消费，一直存在
-        String s = channel.basicConsume(QUEUE_NAME, consumer);
+        String s = channel.basicConsume(QUEUE_NAME, false,consumer);
         //等待回调函数执行完毕之后，关闭字段
-        TimeUnit.SECONDS.sleep(60);
+        TimeUnit.SECONDS.sleep(15);
         System.out.println(s);
         channel.close();
         connection.close();

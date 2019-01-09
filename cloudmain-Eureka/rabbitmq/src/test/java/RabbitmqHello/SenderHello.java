@@ -97,7 +97,14 @@ public class SenderHello {
         queue:队列名称
         exchange:交换器名称
         routingKey:用来绑定队列和交换器的路邮键
-        argment：定义绑定的一些参数
+
+        channel.basicPublish发送消息参数说明
+        exchange:交换器名称
+        routingKey:路由键
+        props:消息的基本属性集
+        byte[] body:消息体
+        mandatory和immediate
+
          * */
     }
 
