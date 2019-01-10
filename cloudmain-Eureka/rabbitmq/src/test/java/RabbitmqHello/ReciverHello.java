@@ -21,6 +21,7 @@ public class ReciverHello {
         Connection connection=factory.newConnection(addresses);//创建连接
         Channel channel = connection.createChannel();//创建信道
         channel.basicQos(1);//设置客户端最多接收未被ack的消息的个数
+        QueueingConsumer
         Consumer consumer=new DefaultConsumer(channel){
             @Override
             public void handleConsumeOk(String consumerTag) {
