@@ -8,9 +8,9 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class 生产者消息确认机制异步 {
-    private static final String EXCHANG_NAME = "exchange_生产者确认机制";
-    private static final String ROUTING_KEY = "routing_生产者确认机制";
-    private static final String QUEUE_NAME = "queue_生产者确认机制";
+    private static final String EXCHANG_NAME = "exchange_生产者确认机制异步";
+    private static final String ROUTING_KEY = "routing_生产者确认机制异步";
+    private static final String QUEUE_NAME = "queue_生产者确认机制异步";
     private static final String IP_ADDRESS = "localhost";
     private static final int PORT = 5672;
 
@@ -34,8 +34,9 @@ public class 生产者消息确认机制异步 {
         channel.addConfirmListener(new ConfirmListener() {
             @Override
             public void handleAck(long deliveryTag, boolean multiple) throws IOException {
-                System.out.println("Nack, SeqNo: "+deliveryTag+" ,multiple: "+multiple);
+//                System.out.println("Nack, SeqNo: "+deliveryTag+" ,multiple: "+multiple);
                 if(multiple){
+                    //清除比给的值小的值
                     confirmSet.headSet(deliveryTag-1).clear();
                 }else{
                 confirmSet.remove(deliveryTag);
@@ -51,12 +52,14 @@ public class 生产者消息确认机制异步 {
                 }
             }
         });
-        for (int i = 0; i <2 ; i++) {
+        Long l
+                =System.currentTimeMillis();
+        for (int i = 0; i <10000 ; i++) {
             long nextPublishSeqNo = channel.getNextPublishSeqNo();
-            channel.basicPublish(EXCHANG_NAME,QUEUE_NAME,false, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认机制".getBytes());
+            channel.basicPublish(EXCHANG_NAME,ROUTING_KEY,false, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认机制".getBytes());
             confirmSet.add(nextPublishSeqNo);
         }
-
+        System.out.println(System.currentTimeMillis()-l);
 //        channel.addReturnListener(new ReturnListener() {
 //            @Override
 //            public void handleReturn(int i, String s, String s1, String s2, AMQP.BasicProperties basicProperties, byte[] bytes) throws IOException {

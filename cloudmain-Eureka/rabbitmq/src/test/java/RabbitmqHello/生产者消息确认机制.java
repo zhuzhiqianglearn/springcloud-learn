@@ -26,13 +26,15 @@ public class 生产者消息确认机制 {
         //将队列，交换器和路由键绑定
         channel.queueBind(QUEUE_NAME,EXCHANG_NAME,ROUTING_KEY);
         channel.confirmSelect();//将信道标记为 确认机制
-        for (int i = 0; i <2 ; i++) {
-            channel.basicPublish(EXCHANG_NAME,QUEUE_NAME,false, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认机制".getBytes());
+        Long l=System.currentTimeMillis();
+        for (int i = 0; i <10000 ; i++) {
+            channel.basicPublish(EXCHANG_NAME,ROUTING_KEY,false, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认机制".getBytes());
 
             if(channel.waitForConfirms()){
-                System.out.println("发送成功");
+//                System.out.println("发送成功");
             }
         }
+        System.out.println(System.currentTimeMillis()-l);
 
 //        channel.addReturnListener(new ReturnListener() {
 //            @Override

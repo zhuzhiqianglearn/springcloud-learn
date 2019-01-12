@@ -31,11 +31,15 @@ public class 生产者消息事务机制 {
         try {
             //开启事务
             channel.txSelect();
-            channel.basicPublish(EXCHANG_NAME,ROUTING_KEY, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认".getBytes());
+            Long l=System.currentTimeMillis();
+            for (int i = 0; i < 10000; i++) {
+                channel.basicPublish(EXCHANG_NAME,ROUTING_KEY, MessageProperties.PERSISTENT_TEXT_PLAIN,"生产者消息确认".getBytes());
+                channel.txCommit();
+            }
+            System.out.println(System.currentTimeMillis()-l);
             //让事务回滚
-            int x=1/0;
+//            int x=1/0;
             //提交事务
-            channel.txCommit();
         }catch (Exception e){
             e.printStackTrace();
             Thread.sleep(5000);
