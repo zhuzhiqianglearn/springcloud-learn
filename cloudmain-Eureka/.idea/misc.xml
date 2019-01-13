@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/confing/pom.xml" />
         <option value="$PROJECT_DIR$/config-hello/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/bus-config/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bus-config" />
         <module name="cloudmain-Eureka" />
         <module name="config-hello" />
         <module name="confing" />
@@ -25,6 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bus-config" target="1.8" />
       <module name="cloudmain-Eureka" target="1.7" />
       <module name="config-hello" target="1.8" />
       <module name="confing" target="1.8" />
