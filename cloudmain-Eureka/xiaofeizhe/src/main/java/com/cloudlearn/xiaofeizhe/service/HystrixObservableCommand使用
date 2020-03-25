@@ -1,3 +1,5 @@
+HystrixObservableCommand的内部静态类Setter 是final类型，只可赋值一次
+
 // 继承HystrixObservableCommand这个类，重写construct（）和错误调用 resumeWithFallback（）方法
 public class PersonObserval extends HystrixObservableCommand<String>{
 
